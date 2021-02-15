@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey WarungRex</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="text-center" id="title">Survey WarungRex</h1>
+            <p class="text-center description" id="description">Terima kasih telah menyempatkan waktu untuk membantu kami meningkatkan kualitas Warung
+                kami</p>
+        </header>
+        <form id="survey-form">
+            <div class="form-group">
+                <label id="name-label" for="name">Nama</label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Masukkan nama anda!"
+                    required>
+            </div>
+            <div class="form-group">
+                <label id="email-label" for="email">Email</label>
+                <input type="email" class="form-control" name="email" id="email" placeholder="Masukkan email anda!"
+                    required>
+            </div>
+            <div class="form-group">
+                <label id="number-label" for="number">Umur <span class="clue">(Optional)</span></label>
+                <input type="number" class="form-control" name="number" id="number" placeholder="Umur" min="10" max="50"
+                    required>
+            </div>
+            <div class="form-group">
+                <p>Darimana kamu berasal?</p>
+                <select required name="daerah" id="dropdown" class="form-control">
+                    <option disabled selected value>Pilih asal daerah</option>
+                    <option value="Indramayu">Indramayu</option>
+                    <option value="Asgard">Asgard</option>
+                    <option value="Cirebon">Cirebon</option>
+                    <option value="Namex">Namex</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <p>Apakah kamu puas dengan kualitas WarungRex?</p>
+                <label><input name="kepuasan" class="input-radio" value="puas" type="radio" checked>Sangat puas!</label>
+                <label><input name="kepuasan" class="input-radio" value="cukup" type="radio">Cukup puas!</label>
+                <label><input name="kepuasan" class="input-radio" value="tidak" type="radio">Tidak puas!</label>
+            </div>
+            <div class="form-group">
+                <p>Apa jajanan favorit kamu di WarungRex?</p>
+                <select required name="jajananfav" id="dropdown" class="form-control">
+                    <option disabled selected value>Pilih jajanan favorit</option>
+                    <option value="keripik">Keripik Kentang</option>
+                    <option value="sup">Sup Kelelawar</option>
+                    <option value="jus">Jus Mangga</option>
+                    <option value="rumbah">Rumbah</option>
+                </select>
+            </div>
+            <div required class="form-group">
+                <p>Apa yang seharusnya diperbaiki? <span class="clue">(Bisa pilih lebih dari 1)</span></p>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="kualitas-pelayanan">Kualitas
+                    Pelayanan</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="kualitas-jajanan">Kualitas
+                    Jajanan</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="kualitas-fasilitas">Kualitas
+                    Fasilitas</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="Variasi-menu">Variasi
+                    Menu</label>
+                <label><input type="checkbox" name="prefer" class="input-checkbox" value="kebersihan-tempat">Kebersihan
+                    Tempat</label>
+            </div>
+            <div class="form-group">
+                <p>Saran dan komentar</p>
+                <textarea name="saran" id="saran" class="input-textarea" placeholder="Masukkan saran dan komentar anda disini... "></textarea>
+            </div>
+            <div class="form-group">
+                <button id="submit" class="submit-button" type="submit">Kirim</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
